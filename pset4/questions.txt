@@ -1,0 +1,29 @@
+0.  JPEG  supports 24 bit color, GIF supports 8 bit color, BMP supports 1, 4, 8,16,24, 32
+    PNG supports 8 bit color.
+1.  Animation is supported by GIF, BMP
+2.  Lossy compression in comparison o Lossless compression tend to loose a lot of information
+    during compressing the file. for ex JPEG is lossy while GIF, PNG are lossless
+3.  JPEG is lossy compression
+4.  Deleting a file most often rewrites the metadata that pointed to the file but
+    leaves the disk block containing the file's contents intact
+5.  Disk sanitizers and declassifiers ensures complete deletion of a file.
+6.  This header defines a set of integral types with specific width requirements 
+7.  UInt8 and INT8 stands for unsigned int and signed int with 8 bits or 1 byte
+    Signed integers has MSB reserved for signing. so range of signed 8 bit int is 
+    -128 to 127 while range of unsigned 8 bit int is o to 255.
+8.  BYTE = 8 Bits Unsigned integer(1 Byte), DWORD = 32 Bits unsig int(4 Bytes), LONG 
+    is 32-bit signed integer, WORD is 16 bit unsigned integer.
+9.  First two bytes of BMP files is 'BM' or in decimal 6677
+10. bisize: The nuber of bytes required by the header. bfsize: The file size in bytes
+    that contains the DIB(BMP)
+11. If biheight is negative it means BMP is top down alligned with top at upper left
+12. WORD bibitcount represents color depth
+13. NULL may be returned when you don't have permission to use the file or out of memory
+14. The third argument is 1 because we only want to read the element once.
+15. padding = 1
+16. fseek(FILE* fp, int offset, int from_where). Fseek change the offset of the file pointer fp
+    offset refers to how many bytes you want to change pos. +ve for forward, -ve for backwards
+17. SEEK_CUR: I you want to change position of fp from its current pos
+    SEEK_END: sets location to the end of file
+    SEEK_SET: sets location to beginning of the file
+18. TODO
